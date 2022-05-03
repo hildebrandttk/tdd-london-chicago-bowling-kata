@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'tdd-london-chicago-bowling-kata'
+include('chicago')
+include('london')
