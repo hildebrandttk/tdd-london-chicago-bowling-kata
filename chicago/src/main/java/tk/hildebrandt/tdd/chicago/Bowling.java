@@ -1,7 +1,4 @@
-package tk.hildebrandt.tdd.london;
-
-import java.util.ArrayList;
-import java.util.List;
+package tk.hildebrandt.tdd.chicago;
 
 public class Bowling {
    void roll(int pins) {

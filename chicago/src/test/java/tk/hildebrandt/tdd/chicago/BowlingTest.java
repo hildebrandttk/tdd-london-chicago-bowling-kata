@@ -1,4 +1,4 @@
-package tk.hildebrandt.tdd.london;
+package tk.hildebrandt.tdd.chicago;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
