@@ -2,10 +2,12 @@ package tk.hildebrandt.tdd.london;
 
 public class BowlingController implements Bowling{
 
-   private BowlingGame bowlingGame;
+   private final BowlingGame bowlingGame;
+   private final ScoreConverter scoreConverter;
 
-   public BowlingController(BowlingGame bowlingGame) {
+   public BowlingController(BowlingGame bowlingGame, ScoreConverter scoreConverter) {
       this.bowlingGame = bowlingGame;
+      this.scoreConverter = scoreConverter;
    }
 
    @Override
@@ -15,10 +17,6 @@ public class BowlingController implements Bowling{
 
    @Override
    public int score() {
-      return convert(bowlingGame.score());
-   }
-
-   private int convert(Score score) {
-      return score.getValue();
+      return scoreConverter.convertToPlain(bowlingGame.score());
    }
 }
